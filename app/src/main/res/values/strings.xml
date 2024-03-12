@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JetpackComposePrueba</string>
+    <string name="LoginTitle">Inicio de sesión</string>
+    <string name="LoginSubtitle">Ingrese su nombre de usuario y contraseña</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contrasena">Contraseña</string>
+</resources>
