@@ -2,15 +2,19 @@ package com.judaocva.jetpackcomposeprueba
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuDefaults.textFieldColors
 import androidx.compose.material3.Icon
@@ -27,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -53,6 +58,33 @@ fun Login() {
         LoginTitleText()
         LoginSubtitleText()
         LoginFields()
+        Button(
+            text = stringResource(R.string.IngresarLabel),
+            btnColors = ButtonDefaults.buttonColors(containerColor = colorResource(R.color.orange)),
+            textColor = colorResource(R.color.white),
+            modifier = Modifier
+                .align(Alignment.CenterHorizontally)
+                .fillMaxWidth()
+                .padding(top = 40.dp)
+                .height(45.dp)
+        )
+        Button(
+            text = stringResource(R.string.ConfiguracionLabel),
+            btnColors = ButtonDefaults.buttonColors(
+                containerColor = colorResource(R.color.white)
+            ),
+            textColor = colorResource(R.color.black),
+            modifier = Modifier
+                .align(Alignment.CenterHorizontally)
+                .fillMaxWidth()
+                .padding(top = 15.dp)
+                .height(45.dp)
+                .border(
+                    width = 1.dp,
+                    color = Color.Black,
+                    shape = RoundedCornerShape(20.dp)
+                )
+        )
     }
 }
 

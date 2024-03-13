@@ -4,4 +4,6 @@
     <string name="LoginSubtitle">Ingrese su nombre de usuario y contraseña</string>
     <string name="Usuario">Usuario</string>
     <string name="Contrasena">Contraseña</string>
+    <string name="IngresarLabel">Ingresar</string>
+    <string name="ConfiguracionLabel">Configuración</string>
 </resources>
